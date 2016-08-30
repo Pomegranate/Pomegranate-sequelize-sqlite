@@ -26,10 +26,10 @@ exports.options = {
 }
 
 exports.metadata = {
-  name: 'Postgres',
+  name: 'Sqlite',
   param: 'SQL',
   type: 'merge',
-  depends: ['SQLiteStorage']
+  depends: ['SQLStore']
 }
 
 exports.plugin = {
