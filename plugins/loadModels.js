@@ -36,7 +36,7 @@ exports.plugin = {
   load: function(inject, loaded) {
     var self = this;
     var Sequelize = inject(function(SQL){return SQL.Sequelize})
-    var StorageLocation = inject('SQLiteStorage')
+    var StorageLocation = inject('SQLStore')
     var db = {}
     var modelCount = 0;
 

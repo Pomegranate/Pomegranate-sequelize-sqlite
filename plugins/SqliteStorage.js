@@ -32,6 +32,7 @@ exports.metadata = {
 exports.plugin = {
   load: function(inject, loaded) {
     var storageFile = path.join(this.options.workDir, this.options.filename)
+    this.Logger.log('Using Storage file  - ' + storageFile)
     loaded(null, storageFile)
   },
   start: function(done) {
